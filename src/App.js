@@ -1,16 +1,11 @@
 import "./App.css";
 import React, { useCallback } from "react";
 import { useEffect, useState } from "react";
-import ShowSummary from "./Components/ShowSummary";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ToastContainer from 'react-bootstrap/ToastContainer'
-import {
-  Modal,
-  ModalBody,
-  ModalHeader,
 
-} from "reactstrap";
-import  Toast   from "react-bootstrap/Toast";
+import "bootstrap/dist/css/bootstrap.min.css";
+import ToastContainer from "react-bootstrap/ToastContainer";
+import { Modal, ModalBody, ModalHeader } from "reactstrap";
+import Toast from "react-bootstrap/Toast";
 import Form from "./Components/Form";
 import MovieDetails from "./Components/MovieDetails";
 
@@ -104,7 +99,7 @@ function App() {
               <tr key={i}>
                 <td>{item.show.id}</td>
                 <td>
-                  <img src={item.show.image.medium} />
+                  <img alt="showimg" src={item.show.image.medium} />
                 </td>
                 <td>{item.show.name}</td>
                 <td>{item.score}</td>

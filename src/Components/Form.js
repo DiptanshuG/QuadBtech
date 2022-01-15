@@ -3,7 +3,7 @@ import { Button, Form, Label, Input, FormGroup } from "reactstrap";
 
 export default function BookShowForm({ submitForm }) {
   const [values, setValues] = useState(
-    JSON.parse(localStorage.getItem("user_data") )|| {}
+    JSON.parse(localStorage.getItem("user_data")) || {}
   );
   const handleValueChange = useCallback((e) => {
     setValues((v) => ({ ...v, [e.target.name]: e.target.value }));
